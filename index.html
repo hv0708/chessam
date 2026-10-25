@@ -1,50 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CHESSAM — Le jeu. L'art. La communauté.</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CHESSAM - ENSAM Casablanca</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="./config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
-body{background:#080808;color:#fff;font-family:system-ui}
-.gold{color:#D4AF37}.gold-bg{background:#D4AF37;color:#000}
-.orange-bg{background:#FE7E3C;color:#000}
+body{background:#071214;color:#E6E8C9;font-family:Inter,sans-serif}
+.cinzel{font-family:Cinzel,serif}
+.gold{color:#D4AF37}.gold-bg{background:#D4AF37}
+.orange-bg{background:#FE7E3C}
+.card{background:rgba(255,255,255,0.05);border:1px solid rgba(212,175,55,0.15);backdrop-filter:blur(10px)}
 </style>
 </head>
-<body class="min-h-screen flex flex-col">
-<header class="flex justify-between items-center p-4 border-b border-[#D4AF37]/30">
-  <h1 class="font-black text-xl gold tracking-widest">CHESSAM</h1>
-  <div class="flex gap-2">
-    <button id="btn-login" class="px-3 py-1.5 rounded-lg border border-white/20">Connexion</button>
-    <button id="btn-signup" class="px-4 py-1.5 rounded-lg font-bold orange-bg">Rejoindre</button>
-    <button id="btn-logout" class="px-3 py-1.5 rounded-lg border border-white/20" style="display:none">Déconnexion</button>
+<body class="overflow-x-hidden">
+<header class="flex justify-between items-center p-4 sticky top-0 z-50 bg-[#071214]/80 backdrop-blur border-b border-white/5">
+  <div class="flex items-center gap-2"><span class="cinzel font-black gold">♔ CHESSAM</span></div>
+  <div class="flex gap-2 items-center">
+    <button id="cart" class="text-white/60">🛒</button>
+    <button id="btn-login" class="px-4 py-1.5 rounded-full border border-white/10 text-xs">LOGIN</button>
+    <button id="btn-signup" class="px-4 py-1.5 rounded-full orange-bg text-xs font-bold">JOIN THE CLUB</button>
   </div>
 </header>
 
-<main class="flex-1 grid place-items-center p-6 text-center">
-  <div class="max-w-xl">
-    <h2 class="text-5xl font-black leading-tight"><span class="gold">Le jeu.</span> L'art. <br>La communauté.</h2>
-    <p class="mt-4 text-white/60">Casablanca Chess Club — bientôt en ligne.</p>
-    <div id="user-info" class="mt-8 p-4 rounded-xl border border-[#D4AF37]/20 bg-white/5 text-sm">Chargement...</div>
-    <p class="mt-6 text-xs text-white/30">hv0708.github.io/chessam</p>
+<section class="px-6 pt-10 pb-20 text-center md:text-left md:px-20 relative">
+  <div class="absolute top-20 right-10 w-32 h-32 bg-[#D4AF37]/20 rounded-full blur-2xl"></div>
+  <p class="text-[10px] tracking-widest bg-[#D4AF37]/10 inline-block px-3 py-1 rounded-full gold mb-4">CHESS CLUB • ENSAM CASABLANCA</p>
+  <h1 class="cinzel text-4xl md:text-6xl font-black leading-tight"><span class="text-white/60">WHERE STRATEGY</span><br><span class="gold">MEETS LEGEND</span></h1>
+  <p class="mt-4 text-white/50 text-sm max-w-md">The official Chess Club of ENSAM Casablanca — where minds sharpen, strategies ignite, and legends are made.</p>
+  <div class="flex gap-3 mt-6 justify-center md:justify-start">
+    <button onclick="ChessamAuth.open('signup')" class="px-6 py-2.5 rounded-full orange-bg text-xs font-bold">JOIN THE CLUB →</button>
+    <button class="px-6 py-2.5 rounded-full border border-[#D4AF37]/30 text-xs">EXPLORE EVENTS</button>
   </div>
-</main>
+  <div class="mt-10 grid place-items-center"><div class="text-8xl opacity-90">♔♕♖♗♘</div><p class="text-[10px] tracking-widest gold mt-2">EST. 2025 • CASABLANCA, MOROCCO</p></div>
+</section>
+
+<section class="px-6 md:px-20 py-10">
+  <p class="text-[10px] gold tracking-widest">ABOUT CHESSAM</p>
+  <h2 class="cinzel text-2xl gold mt-1">A club built for strategic minds</h2>
+  <div class="grid md:grid-cols-3 gap-4 mt-6">
+    <div class="card rounded-2xl p-5"><p class="text-xs">♟️</p><h3 class="font-bold mt-2 text-sm">Training</h3><p class="text-xs text-white/50 mt-1">Weekly tactical and strategic sessions for every level.</p></div>
+    <div class="card rounded-2xl p-5"><p class="text-xs">🏆</p><h3 class="font-bold mt-2 text-sm">Competition</h3><p class="text-xs text-white/50 mt-1">Internal tournaments, club ranking and inter-school matches.</p></div>
+    <div class="card rounded-2xl p-5"><p class="text-xs">👥</p><h3 class="font-bold mt-2 text-sm">Community</h3><p class="text-xs text-white/50 mt-1">A network of future engineers gathered around the same board.</p></div>
+  </div>
+</section>
+
+<section class="px-6 md:px-20 py-10">
+  <p class="text-[10px] gold tracking-widest">NEXT EVENTS • PREVIEW DATA</p>
+  <h2 class="cinzel text-2xl mt-1">The first battles of the season</h2>
+  <div class="flex gap-3 mt-4 overflow-x-auto">
+    <div class="card min-w-[220px] rounded-xl p-4"><p class="gold font-bold">12 NOV</p><p class="text-sm font-bold">Integration Tournament</p><p class="text-[11px] text-white/50">Open to all ENSAM students</p></div>
+    <div class="card min-w-[220px] rounded-xl p-4"><p class="gold font-bold">28 NOV</p><p class="text-sm font-bold">Initiation Night</p><p class="text-[11px] text-white/50">Rules, openings, first checkmates</p></div>
+    <div class="card min-w-[220px] rounded-xl p-4"><p class="gold font-bold">05 DEC</p><p class="text-sm font-bold">Blitz Friday</p><p class="text-[11px] text-white/50">Fast games, ranking points</p></div>
+  </div>
+</section>
+
+<section class="px-6 md:px-20 py-10">
+  <h2 class="cinzel text-2xl">STORE CHESSAM</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
+    <div class="card rounded-xl p-3 text-center"><div class="text-4xl">👕</div><p class="text-xs mt-2">Hoodie CHESSAM</p><p class="gold text-xs font-bold">349 MAD</p><button class="mt-2 w-full orange-bg rounded-full py-1 text-[10px] font-bold">ADD TO CART</button></div>
+    <div class="card rounded-xl p-3 text-center"><div class="text-4xl">🧢</div><p class="text-xs mt-2">Cap CHESSAM</p><p class="gold text-xs font-bold">129 MAD</p><button class="mt-2 w-full orange-bg rounded-full py-1 text-[10px] font-bold">ADD TO CART</button></div>
+    <div class="card rounded-xl p-3 text-center"><div class="text-4xl">♟️</div><p class="text-xs mt-2">Chessboard Premium</p><p class="gold text-xs font-bold">690 MAD</p><button class="mt-2 w-full orange-bg rounded-full py-1 text-[10px] font-bold">ADD TO CART</button></div>
+    <div class="card rounded-xl p-3 text-center"><div class="text-4xl">👜</div><p class="text-xs mt-2">Tote Bag</p><p class="gold text-xs">89 MAD</p><button class="mt-2 w-full bg-white/10 rounded-full py-1 text-[10px]">BIENTÔT</button></div>
+  </div>
+</section>
+
+<section class="px-6 md:px-20 py-10">
+  <h2 class="cinzel text-2xl">The CHESSAM top 8</h2>
+  <div id="ranking" class="grid md:grid-cols-2 gap-2 mt-4 text-xs"></div>
+</section>
+
+<section class="m-6 md:mx-20 rounded-[2rem] border border-[#D4AF37]/20 bg-[#D4AF37]/5 p-10 text-center">
+  <h2 class="cinzel text-3xl font-black gold">REJOINDRE CHESSAM</h2>
+  <p class="text-xs text-white/50 mt-2">Be part of the founding generation. Your move.</p>
+  <button onclick="ChessamAuth.open('signup')" class="mt-4 px-6 py-2.5 rounded-full orange-bg text-xs font-bold">JOIN THE CLUB →</button>
+</section>
+
+<footer class="text-center py-8 text-[10px] text-white/30">Chess club of ENSAM Casablanca • École Nationale Supérieure d'Arts et Métiers</footer>
 
 <script src="./chessam-auth.js"></script>
 <script>
-const $=id=>document.getElementById(id);
-const lb=$('btn-login'), sb=$('btn-signup'), ob=$('btn-logout'), info=$('user-info');
-function refresh(u){
-  if(u){ lb.style.display='none'; sb.style.display='none'; ob.style.display='inline-block'; info.innerHTML='✅ Connecté : <b class="gold">'+u.email+'</b>'; }
-  else { lb.style.display='inline-block'; sb.style.display='inline-block'; ob.style.display='none'; info.textContent='Non connecté — Cliquez sur Rejoindre pour créer un compte.'; }
-}
-window.addEventListener('chessam:auth', e=>refresh(e.detail.user));
-lb.onclick=()=>ChessamAuth.open('login');
-sb.onclick=()=>ChessamAuth.open('signup');
-ob.onclick=()=>ChessamAuth.signOut();
-setTimeout(()=>refresh(ChessamAuth.user()),500);
+const top8=[["Atlas",1642],["Zellige",1588],["Kasbah",1540],["Medina",1497],["Nomad",1455],["Souk",1432],["Riad",1410],["Oasis",1388]];
+document.getElementById('ranking').innerHTML=top8.map((p,i)=>`<div class="card rounded-xl p-3 flex justify-between items-center ${i==0?'border-[#D4AF37]/40':''}"><span>${i+1}. ${p[0]}</span><span class="gold font-bold">${p[1]}</span></div>`).join('');
+document.getElementById('btn-login').onclick=()=>ChessamAuth.open('login');
+document.getElementById('btn-signup').onclick=()=>ChessamAuth.open('signup');
+window.addEventListener('chessam:auth',e=>{
+  if(e.detail.user){ document.getElementById('btn-login').textContent=e.detail.user.email; document.getElementById('btn-signup').textContent='Déconnexion'; document.getElementById('btn-signup').onclick=()=>ChessamAuth.signOut(); }
+});
 </script>
 </body>
 </html>
