@@ -1,119 +1,89 @@
 <!DOCTYPE html>
-<html lang="ang">
+<html lang="fr">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CHESSAM - Where Strategy Meets Legend</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-body{background:#050505;color:#EDEDED;font-family:'Inter',sans-serif}
+body{background:#070707;color:#E9E9E9;font-family:'Inter',sans-serif}
 .font-cinzel{font-family:'Cinzel',serif}
-.card{background:linear-gradient(180deg,#121212 0%,#0A0A0A 100%);border:1px solid rgba(212,175,55,0.22);border-radius:16px}
-.card:hover{border-color:#D4AF37;transform:translateY(-3px);transition:.3s}
+.card{background:linear-gradient(180deg,#121212,#0B0B0B);border:1px solid rgba(201,168,106,0.18);border-radius:12px}
+.badge{background:#C9A86A;color:#111;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px}
 </style>
 </head>
-<body class="bg-black">
+<body>
 
-<header class="sticky top-0 z-50 bg-black/85 backdrop-blur-xl border-b border-yellow-600/20">
-<div class="max-w-[1280px] mx-auto px-6 h-[68px] flex items-center justify-between">
-<div class="flex items-center gap-3"><div class="w-10 h-10 rounded bg-gradient-to-br from-[#D4AF37] to-[#8B6914] flex items-center justify-center text-black font-bold text-xl">♔</div><span class="font-cinzel font-extrabold tracking-[0.25em] text-[#D4AF37]">CHESSAM</span></div>
-<div class="hidden lg:flex gap-8 text-[11px] tracking-[0.2em] text-white/60">
-<a href="#home">HOME</a><a href="#boutique">BOUTIQUE</a><a href="#top">LEGENDS</a><a href="#arena">ARENA</a><a href="#memes">MEMES</a><a href="#faq">FAQ</a>
-</div>
-<div class="flex gap-3"><a class="text-[11px] border border-white/20 px-5 py-2 rounded-full">CONNECTION</a><a class="text-[11px] bg-[#D4AF37] text-black font-bold px-5 py-2 rounded-full">REJOINDRE</a></div>
+<header class="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-white/5">
+<div class="max-w-[1180px] mx-auto px-6 h-[72px] flex items-center justify-between">
+<div class="flex items-center gap-2"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#C9A86A] to-[#7A5F2F] flex items-center justify-center text-black font-bold">♔</div><span class="font-cinzel text-[#C9A86A] font-bold tracking-widest text-xs">CHESSAM</span></div>
+<div class="flex gap-2"><button class="border border-white/20 px-4 py-1.5 rounded-full text-[10px]">CONNECTION</button><button class="bg-[#C9A86A] text-black font-bold px-4 py-1.5 rounded-full text-[10px]">REJOINDRE</button></div>
 </div>
 </header>
 
-<section id="home" class="max-w-[1280px] mx-auto px-6 md:px-10 py-20 grid md:grid-cols-2 gap-12 items-center">
+<section class="max-w-[1180px] mx-auto px-6 py-14 grid md:grid-cols-2 gap-8 items-center">
 <div>
-<div class="text-[12px] tracking-[0.35em] text-[#D4AF37] font-cinzel">CHESSAM</div>
-<h1 class="font-cinzel font-extrabold text-[38px] md:text-[54px] leading-[0.95] mt-3">Where Strategy<br><span class="text-[#D4AF37]">Meets Legend</span></h1>
-<p class="text-white/55 text-[13px] mt-5 max-w-[420px]">Club d'échecs CHESSAM • ENSAM • Excellence depuis 2024 — ENSAM Casablanca</p>
-<div class="flex gap-3 mt-8"><button class="bg-[#D4AF37] text-black font-bold text-[12px] px-7 py-3 rounded-full">Rejoindre le Club</button><button class="border border-[#D4AF37]/30 text-[12px] px-7 py-3 rounded-full">Découvrir les Événements</button></div>
-<div class="flex gap-6 mt-10 text-[11px] text-white/45"><span>👥 150+ MEMBRES</span><span>🏆 20+ TOURNOIS</span><span>📍 NATIONAL</span></div>
+<div class="text-[11px] tracking-[0.3em] text-[#C9A86A] font-cinzel">CHESSAM</div>
+<h1 class="font-cinzel text-[30px] font-bold leading-tight mt-2">Where Strategy Meets Legend</h1>
+<p class="text-white/50 text-[11px] mt-3">Club d'échecs CHESSAM • ENSAM • Excellence, Compétition & Passion depuis 2024 — Proudly affiliated with ENSAM Casablanca</p>
+<div class="flex gap-2 mt-5"><button class="bg-[#C9A86A] text-black font-bold text-[11px] px-5 py-2 rounded">Rejoindre le Club</button><button class="border border-white/20 text-[11px] px-5 py-2 rounded">Découvrir les Événements</button></div>
 </div>
-<div class="card h-[420px] flex items-center justify-center text-[150px]">♚</div>
+<div><img src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=800" class="rounded-xl w-full h-[300px] object-cover" style="filter:brightness(0.8) sepia(0.3)"></div>
 </section>
 
-<section id="boutique" class="bg-[#090909] border-y border-yellow-600/10">
-<div class="max-w-[1280px] mx-auto px-6 md:px-10 py-16">
-<div class="flex flex-col md:flex-row justify-between gap-4"><h2 class="font-cinzel text-[#D4AF37] text-[26px] font-bold">BOUTIQUE — <span class="text-white">Équipement Premium</span></h2><div class="border border-[#D4AF37]/40 rounded-full px-5 py-2 text-xs text-[#D4AF37]">🔥 Next Drop — Gold Hoodie — 03d 14h</div></div>
-<div class="grid md:grid-cols-3 gap-6 mt-10">
-<div class="card p-4"><div class="h-[220px] bg-white rounded-xl flex items-center justify-center text-black text-7xl">♜</div><h3 class="mt-4 font-bold text-sm">Échiquier Luxe CHESSAM</h3><p class="text-white/40 text-xs">Bois d'ébène, édition limitée</p><div class="flex justify-between mt-3"><span class="text-[#D4AF37] font-bold">1296 €</span><button class="border border-white/10 text-[11px] px-4 py-2 rounded-full">Ajouter au panier</button></div></div>
-<div class="card p-4"><div class="h-[220px] bg-white rounded-xl flex items-center justify-center text-black text-7xl">♔</div><h3 class="mt-4 font-bold text-sm">Pièces Gold Edition</h3><p class="text-white/40 text-xs">Plaquées or 24 carats</p><div class="flex justify-between mt-3"><span class="text-[#D4AF37] font-bold">795 €</span><button class="border border-white/10 text-[11px] px-4 py-2 rounded-full">Ajouter au panier</button></div></div>
-<div class="card p-4"><div class="h-[220px] bg-zinc-900 rounded-xl flex items-center justify-center font-cinzel font-bold text-2xl">CHESSAM</div><h3 class="mt-4 font-bold text-sm">Hoodie CHESSAM Club</h3><p class="text-white/40 text-xs">Coton premium, broderie dorée</p><div class="flex justify-between mt-3"><span class="text-[#D4AF37] font-bold">145 €</span><button class="border border-white/10 text-[11px] px-4 py-2 rounded-full">Ajouter au panier</button></div></div>
-</div>
-</div>
-</section>
-
-<section id="top" class="max-w-[1280px] mx-auto px-6 md:px-10 py-16">
-<h2 class="font-cinzel text-center text-[#D4AF37] text-[24px] font-bold tracking-widest">TOP 8 — CLASSEMENT CLUB</h2><p class="text-center text-white/30 text-[11px] mt-2">Classement saison 2024 — Mis à jour 12 Dec 2024</p>
-<div class="grid lg:grid-cols-3 gap-6 mt-10">
-<div class="lg:col-span-2 card p-6">
-<div class="space-y-2 text-[13px]">
-<div class="flex items-center bg-[#D4AF37]/10 border border-[#D4AF37]/20 p-3 rounded-xl"><span class="w-10 text-[#D4AF37] font-bold">01</span><span class="flex-1 font-semibold">Amine K. — 2200 ELO</span><span class="text-white/40 text-xs">V 18 N 2 D 1</span></div>
-<div class="flex items-center p-3 rounded-xl"><span class="w-10 text-[#D4AF37]">02</span><span class="flex-1">Sara L. — 2105 ELO</span><span class="text-white/40 text-xs">V 15 N 3 D 2</span></div>
-<div class="flex items-center p-3 rounded-xl"><span class="w-10 text-[#D4AF37]">03</span><span class="flex-1">Younes R. — 2030 ELO</span><span class="text-white/40 text-xs">V 14 N 4 D 3</span></div>
-<div class="flex items-center p-3 rounded-xl"><span class="w-10 text-[#D4AF37]">04</span><span class="flex-1">Lina M. — 1985 ELO</span><span class="text-white/40 text-xs">V 12 N 5 D 3</span></div>
-<div class="flex items-center p-3 rounded-xl"><span class="w-10 text-[#D4AF37]">05</span><span class="flex-1">Mehdi T. — 1930 ELO</span><span class="text-white/40 text-xs">V 11 N 4 D 4</span></div>
-<div class="flex items-center p-3 rounded-xl"><span class="w-10 text-[#D4AF37]">06</span><span class="flex-1">Fatima Z. — 1890 ELO</span><span class="text-white/40 text-xs">V 10 N 5 D 5</span></div>
-<div class="flex items-center p-3 rounded-xl"><span class="w-10 text-[#D4AF37]">07</span><span class="flex-1">Omar B. — 1855 ELO</span><span class="text-white/40 text-xs">V 9 N 3 D 6</span></div>
-<div class="flex items-center p-3 rounded-xl"><span class="w-10 text-[#D4AF37]">08</span><span class="flex-1">Nora H. — 1820 ELO</span><span class="text-white/40 text-xs">V 8 N 6 D 4</span></div>
-</div>
-<button class="mt-6 w-full bg-white/5 border border-[#D4AF37]/20 py-3 rounded-full text-xs text-[#D4AF37]">Voir le classement complet →</button>
-</div>
-<div class="card p-6 text-center"><div class="text-[10px] tracking-[0.3em] text-[#D4AF37]">CHAMPION</div><div class="font-cinzel font-bold mt-3">Tournoi ENSAM 2024 #12</div><div class="text-white/30 text-[11px] mt-2">28-30 Nov • 64 participants</div><div class="mt-8 border-t border-white/10 pt-6"><div class="text-[11px] text-white/40">Prochain tournoi:</div><div class="text-[#D4AF37] text-sm font-bold mt-1">Master Tournage — 26 Dec 2024</div></div><button class="mt-6 w-full bg-[#D4AF37] text-black font-bold py-3 rounded-full text-xs">S'inscrire — 50 places</button></div>
+<section class="max-w-[1180px] mx-auto px-6 py-12">
+<h2 class="font-cinzel text-center text-[#C9A86A] text-sm">BOUTIQUE — Équipement Premium</h2>
+<p class="text-center text-white/30 text-[11px]">Style et performance pour tous les joueurs</p>
+<div class="grid md:grid-cols-3 gap-6 mt-8">
+<div class="card p-5 text-center"><img src="https://images.unsplash.com/photo-1604948501466-4e9c339b9c24?w=400" class="h-[180px] w-full object-cover rounded"><h4 class="font-bold text-[13px] mt-4">Échiquier Luxe CHESSAM</h4><p class="text-white/40 text-[10px]">Bois d'ébène, détails dorés, édition limitée<br><span class="text-[#C9A86A] font-bold">1296 €</span></p><button class="mt-3 border border-white/10 text-[10px] px-4 py-1.5 rounded">Ajouter au panier</button></div>
+<div class="card p-5 text-center"><img src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=400" class="h-[180px] w-full object-cover rounded" style="filter:sepia(0.8)"><h4 class="font-bold text-[13px] mt-4">Pièces Gold Edition</h4><p class="text-white/40 text-[10px]">Jeu de pièces plaquées or<br><span class="text-[#C9A86A] font-bold">795 €</span></p><button class="mt-3 border border-white/10 text-[10px] px-4 py-1.5 rounded">Ajouter au panier</button></div>
+<div class="card p-5 text-center"><div class="h-[180px] w-full bg-zinc-900 rounded flex items-center justify-center font-cinzel text-[#C9A86A]">CHESSAM HOODIE</div><h4 class="font-bold text-[13px] mt-4">Hoodie CHESSAM Club</h4><p class="text-white/40 text-[10px]">Coton premium, broderie dorée<br><span class="text-[#C9A86A] font-bold">145 €</span></p><button class="mt-3 border border-white/10 text-[10px] px-4 py-1.5 rounded">Ajouter au panier</button></div>
 </div>
 </section>
 
-<section id="arena" class="max-w-[1280px] mx-auto px-6 md:px-10 py-16 bg-[#090909]">
-<h2 class="font-cinzel text-center text-[#D4AF37] text-2xl font-bold">ARENA LIVE — Regardez en Direct</h2>
-<div class="grid md:grid-cols-3 gap-6 mt-10">
-<div class="card p-4"><div class="h-[180px] bg-zinc-900 rounded-xl flex items-center justify-center relative"><span class="absolute top-3 left-3 bg-red-600 text-[10px] px-2 py-1 rounded-full">● LIVE</span>♟️ EN DIRECT</div><p class="text-xs mt-3 font-semibold">Table 2 — Younes R vs Mehdi T — 155 viewers</p><div class="flex gap-2 mt-3"><button class="flex-1 bg-[#D4AF37] text-black font-bold text-[11px] py-2 rounded-full">Résoudre le puzzle</button><button class="flex-1 border border-white/10 text-[11px] py-2 rounded-full">Voir solution</button></div></div>
-<div class="card p-4"><div class="h-[180px] bg-zinc-900 rounded-xl flex items-center justify-center relative"><span class="absolute top-3 left-3 bg-red-600 text-[10px] px-2 py-1 rounded-full">● LIVE 146 viewers</span>♔♕♖</div><p class="text-xs mt-3 font-semibold">Table 2 — Younes R vs Mehdi T</p><button class="w-full mt-3 bg-[#D4AF37] text-black font-bold text-[11px] py-3 rounded-full">Accéder à l'Arena Live</button></div>
-<div class="card p-4"><div class="h-[180px] bg-zinc-900 rounded-xl p-3 text-[11px] text-white/50"><p>[18:03] Magnifique sacrifice!</p><p>[18:02] Quelle défense Sicilienne!</p><p class="mt-3 text-[#D4AF37]">💬 Vous êtes ici: Table 1 — Blitz 5+3</p></div><p class="text-xs mt-3 font-semibold">Table 4 — Fatima Z vs Omar B — 89 viewers</p><button class="w-full mt-3 border border-[#D4AF37]/30 text-[#D4AF37] text-[11px] py-3 rounded-full">Notifier moi</button></div>
+<section class="max-w-[1180px] mx-auto px-6 py-8">
+<h2 class="font-cinzel text-center text-white">TOP 8 — CLASSEMENT CLUB</h2><p class="text-center text-white/30 text-[10px]">Classement saison 2024 — Mise à jour 12 Dec 2024</p>
+<div class="grid md:grid-cols-[1.6fr_0.9fr] gap-6 mt-6">
+<div class="card p-4 text-[11px] space-y-1.5">
+<div class="flex"><span class="badge">01</span><span class="ml-3 flex-1">Amine K. (2200 ELO)</span><span class="text-white/40">V 18 N 2 D 1</span></div>
+<div class="flex"><span class="badge bg-white/10 text-white/60">02</span><span class="ml-3 flex-1">Sara L. (2105 ELO)</span><span class="text-white/40">V 15 N 3 D 2</span></div>
+<div class="flex"><span class="badge bg-white/10 text-white/60">03</span><span class="ml-3 flex-1">Younes R. (2030 ELO)</span><span class="text-white/40">V 14 N 4 D 3</span></div>
+<div class="flex"><span class="badge bg-white/10 text-white/60">04</span><span class="ml-3 flex-1">Lina M. (1985 ELO)</span><span class="text-white/40">V 12 N 5 D 3</span></div>
+<div class="flex"><span class="badge bg-white/10 text-white/60">05</span><span class="ml-3 flex-1">Mehdi T. (1920 ELO)</span></div>
+<div class="flex"><span class="badge bg-white/10 text-white/60">06</span><span class="ml-3 flex-1">Fatima Z. (1890 ELO)</span></div>
+<div class="flex"><span class="badge bg-white/10 text-white/60">07</span><span class="ml-3 flex-1">Omar B. (1855 ELO)</span></div>
+<div class="flex"><span class="badge bg-white/10 text-white/60">08</span><span class="ml-3 flex-1">Nora H. (1820 ELO)</span></div>
+</div>
+<div class="card p-4 text-[11px]"><span class="bg-[#C9A86A] text-black text-[9px] font-bold px-2 py-1 rounded">CHAMPION</span><p class="font-bold mt-2">Tournoi ENSAM 2024 #12</p><p class="text-white/40 text-[10px]">28 Nov - 64 participants • 5 rondes</p><p class="mt-4 font-bold">Prochain événement:</p><p class="text-white/60 text-[10px]">Master Stratégie - 12 Jan 2025</p><button class="mt-3 w-full border border-[#C9A86A]/30 text-[#C9A86A] text-[10px] py-2 rounded">Voir le classement complet →</button></div>
 </div>
 </section>
 
-<section class="max-w-[1280px] mx-auto px-6 md:px-10 py-16">
-<h2 class="font-cinzel text-center text-[#D4AF37] text-2xl font-bold">HALL OF FAME — Légendes CHESSAM</h2>
-<div class="grid md:grid-cols-3 gap-6 mt-10">
-<div class="card p-8 text-center"><div class="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-zinc-700 to-zinc-900 border border-[#D4AF37]/20"></div><div class="mt-4 bg-[#D4AF37] text-black text-[10px] font-bold px-3 py-1 rounded-full inline-block">CHAMPION 2024</div><h3 class="font-bold mt-3">Amine K</h3><p class="text-[11px] text-white/40 mt-1">Champion 2024 • 2200 ELO • 18 victoires</p><button class="mt-4 bg-[#D4AF37] text-black font-bold text-[11px] px-6 py-2 rounded-full">Voir le profil</button></div>
-<div class="card p-8 text-center"><div class="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-zinc-700 to-zinc-900 border border-[#D4AF37]/20"></div><div class="mt-4 bg-[#D4AF37] text-black text-[10px] font-bold px-3 py-1 rounded-full inline-block">CHAMPIONNE 2024</div><h3 class="font-bold mt-3">Sara L</h3><p class="text-[11px] text-white/40 mt-1">Championne Féminine 2024 • 2105 ELO</p><button class="mt-4 bg-[#D4AF37] text-black font-bold text-[11px] px-6 py-2 rounded-full">Voir le profil</button></div>
-<div class="card p-8 text-center"><div class="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-zinc-700 to-zinc-900 border border-[#D4AF37]/20"></div><div class="mt-4 bg-[#D4AF37] text-black text-[10px] font-bold px-3 py-1 rounded-full inline-block">ROOKIE 2024</div><h3 class="font-bold mt-3">Younes R</h3><p class="text-[11px] text-white/40 mt-1">Rookie 2024 • 2030 ELO • +180 progression</p><button class="mt-4 bg-[#D4AF37] text-black font-bold text-[11px] px-6 py-2 rounded-full">Voir le profil</button></div>
+<section class="max-w-[1180px] mx-auto px-6 py-12">
+<h2 class="font-cinzel text-center text-white">APPRENDRE — Tutoriels d'Échecs</h2><p class="text-center text-white/30 text-[10px]">Progressez avec nos modules pédagogiques ENSAM</p>
+<div class="grid md:grid-cols-3 gap-6 mt-8">
+<div class="card p-6 text-center"><div class="w-12 h-12 mx-auto bg-white/5 rounded flex items-center justify-center">📖</div><h4 class="font-bold text-[12px] mt-3">Ouverture : Les Fondamentaux</h4><p class="text-white/40 text-[10px] mt-2">Maîtrisez les 10 ouvertures clés<br>10 min • Débutant • GRATUIT</p><button class="mt-3 bg-[#C9A86A] text-black font-bold text-[10px] px-5 py-2 rounded">Commencer le cours</button></div>
+<div class="card p-6 text-center"><div class="w-12 h-12 mx-auto bg-white/5 rounded flex items-center justify-center">♞</div><h4 class="font-bold text-[12px] mt-3">Milieu de Jeu : Tactiques</h4><p class="text-white/40 text-[10px] mt-2">Fourchettes, clouages • 20 min<br>POPULAIRE</p><button class="mt-3 bg-[#C9A86A] text-black font-bold text-[10px] px-5 py-2 rounded">Commencer le cours</button></div>
+<div class="card p-6 text-center"><div class="w-12 h-12 mx-auto bg-white/5 rounded flex items-center justify-center">⏳</div><h4 class="font-bold text-[12px] mt-3">Finale : Techniques de Gain</h4><p class="text-white/40 text-[10px] mt-2">Finales Roi-Pion • 15 min<br>NOUVEAU</p><button class="mt-3 border border-white/20 text-[10px] px-5 py-2 rounded">Voir tout le calendrier</button></div>
 </div>
 </section>
 
-<section id="memes" class="bg-[#090909] border-y border-yellow-600/10">
-<div class="max-w-[1280px] mx-auto px-6 md:px-10 py-16">
-<h2 class="font-cinzel text-center text-[#D4AF37] text-2xl font-bold">MEME ARENA — Communauté & Fun</h2>
-<div class="grid md:grid-cols-3 gap-6 mt-10">
-<div class="card p-0 overflow-hidden"><div class="bg-white text-black p-4"><div class="font-bold text-sm">Meme 1. Quand tu fais un blunder 😭</div><div class="h-[140px] bg-zinc-100 rounded-xl mt-3 flex items-center justify-center">♚ → 😭</div><div class="text-[11px] mt-3">243 likes • 12 commentaires</div></div><button class="w-full bg-black text-white text-[11px] py-3">Voir commentaires</button></div>
-<div class="card p-0 overflow-hidden"><div class="bg-white text-black p-4"><div class="font-bold text-sm">Moi en finale vs 2200 ELO *calme*</div><div class="h-[140px] bg-zinc-100 rounded-xl mt-3 flex items-center justify-center text-5xl">😰</div><div class="text-[11px] mt-3">512 likes • 31 commentaires</div></div><button class="w-full bg-[#D4AF37] text-black font-bold text-[11px] py-3">Soumettre ton meme</button></div>
-<div class="card p-4"><div class="font-bold text-sm">POV: ton adversaire propose nulle en position gagnée</div><div class="h-[140px] bg-zinc-800 rounded-xl mt-3"></div><div class="text-[11px] mt-3 text-white/40">189 likes • 8 commentaires</div><button class="w-full mt-3 border border-white/10 text-[11px] py-3 rounded-full">Voir Hall des Memes</button></div>
-</div>
+<section class="max-w-[1180px] mx-auto px-6 py-8">
+<h2 class="font-cinzel text-center text-white">TOURNOIS — Événements & Compétitions</h2>
+<div class="grid md:grid-cols-3 gap-6 mt-8">
+<div class="card p-5 text-center"><h4 class="font-bold text-[12px]">Tournoi Mensuel Décembre 2024</h4><p class="text-white/40 text-[10px] mt-1">14 Dec 2024 • ENSAM Casablanca<br>Blitz 5min • 50 participants max</p><button class="mt-3 border border-[#C9A86A]/30 text-[#C9A86A] text-[10px] px-4 py-1.5 rounded">S'inscrire maintenant</button></div>
+<div class="card p-5 text-center"><h4 class="font-bold text-[12px]">Championnat Inter-Écoles Casablanca</h4><p class="text-white/40 text-[10px] mt-1">18 Jan 2025 • ENSAM Casablanca<br>Classique 30min • Prix: 5000 DH</p><button class="mt-3 border border-white/20 text-[10px] px-4 py-1.5 rounded">En savoir plus</button></div>
+<div class="card p-5 text-center"><h4 class="font-bold text-[12px]">Soirée Blitz & Networking</h4><p class="text-white/40 text-[10px] mt-1">05 Jan 2025 • Lounge CHESSAM<br>Blitz amical • Apéro inclus</p><button class="mt-3 border border-white/20 text-[10px] px-4 py-1.5 rounded">Rejoindre</button></div>
 </div>
 </section>
 
-<section id="faq" class="max-w-[860px] mx-auto px-6 md:px-10 py-16">
-<h2 class="font-cinzel text-center text-[#D4AF37] text-2xl font-bold">FAQ — Questions Fréquentes</h2>
-<div class="mt-10 space-y-3">
-<div class="card p-5 flex justify-between cursor-pointer" onclick="this.querySelector('.a').classList.toggle('hidden')"><div><div class="font-bold text-[13px]">Comment rejoindre le club CHESSAM ?</div><div class="a text-[12px] text-white/50 mt-2">Cotisation 200 DH, ouvert à tous ENSAM.</div></div><div class="w-7 h-7 rounded-full bg-[#D4AF37] text-black flex items-center justify-center font-bold">+</div></div>
-<div class="card p-5 flex justify-between cursor-pointer" onclick="this.querySelector('.a').classList.toggle('hidden')"><div><div class="font-bold text-[13px]">Quel est le niveau requis ?</div><div class="a hidden text-[12px] text-white/50 mt-2">Aucun niveau minimum! Débutants bienvenus.</div></div><div class="w-7 h-7 rounded-full bg-[#D4AF37] text-black flex items-center justify-center font-bold">+</div></div>
-<div class="card p-5 flex justify-between cursor-pointer" onclick="this.querySelector('.a').classList.toggle('hidden')"><div><div class="font-bold text-[13px]">Où ont lieu les rencontres ?</div><div class="a hidden text-[12px] text-white/50 mt-2">Local CHESSAM ENSAM Casa, Mercredi & Vendredi 18h-20h.</div></div><div class="w-7 h-7 rounded-full bg-[#D4AF37] text-black flex items-center justify-center font-bold">+</div></div>
+<section class="max-w-[1180px] mx-auto px-6 py-12 border-t border-white/5">
+<h2 class="font-cinzel text-center text-white/80 text-[14px]">CONTACT — Rejoignez CHESSAM</h2><p class="text-center text-white/30 text-[10px]">Une question ? Nous répondons sous 24h:</p>
+<div class="grid md:grid-cols-2 gap-8 mt-8 max-w-[800px] mx-auto">
+<div class="text-[11px] text-white/50 space-y-2"><p>📍 ENSAM Casablanca, Boulevard Hassan II</p><p>✉️ contact@chessam-ensam.ma</p><p>🕒 Mercredi & Vendredi - 17h-20h</p></div>
+<div class="space-y-2"><input placeholder="Nom complet" class="w-full bg-[#121212] border border-white/10 rounded px-4 py-2 text-[11px]"><input placeholder="Email" class="w-full bg-[#121212] border border-white/10 rounded px-4 py-2 text-[11px]"><textarea placeholder="Message" class="w-full bg-[#121212] border border-white/10 rounded px-4 py-2 text-[11px] h-[80px]"></textarea><button class="w-full bg-[#C9A86A] text-black font-bold text-[11px] py-2.5 rounded">Envoyer le message</button></div>
 </div>
 </section>
 
-<section class="max-w-[1280px] mx-auto px-6 md:px-10 py-16 bg-[#090909]">
-<h2 class="font-cinzel text-center text-[#D4AF37] font-bold">RÉSEAUX SOCIAUX — Rejoignez la Communauté</h2>
-<div class="grid md:grid-cols-2 gap-4 max-w-[900px] mx-auto mt-10">
-<div class="card p-5 flex justify-between items-center"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded bg-gradient-to-br from-purple-500 to-pink-500"></div><div><div class="text-[11px] text-white/30">INSTAGRAM</div><div class="text-[13px] font-semibold">15.2k followers</div></div></div><button class="bg-[#D4AF37] text-black font-bold text-[11px] px-5 py-2 rounded-full">@chessam_ensam</button></div>
-<div class="card p-5 flex justify-between items-center"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-indigo-600"></div><div><div class="text-[11px] text-white/30">DISCORD</div><div class="text-[13px] font-semibold">892 membres</div></div></div><button class="bg-[#D4AF37] text-black font-bold text-[11px] px-5 py-2 rounded-full">@CHESSAM Officiel</button></div>
-<div class="card p-5 flex justify-between items-center"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded bg-red-600"></div><div><div class="text-[11px] text-white/30">YOUTUBE</div><div class="text-[13px] font-semibold">4.1k abonnés • 45 vidéos</div></div></div><button class="bg-[#D4AF37] text-black font-bold text-[11px] px-5 py-2 rounded-full">CHESSAM TV</button></div>
-<div class="card p-5 flex justify-between items-center"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded bg-blue-700"></div><div><div class="text-[11px] text-white/30">LINKEDIN</div><div class="text-[13px] font-semibold">1.3k followers</div></div></div><button class="bg-[#D4AF37] text-black font-bold text-[11px] px-5 py-2 rounded-full">Suivre LinkedIn</button></div>
-</div>
-</section>
-
-<footer class="border-t border-[#D4AF37]/10 py-10 text-center text-[11px] text-white/30"><p>© 2024 CHESSAM ENSAM — Club d'Échecs Officiel ENSAM</p></footer>
+<footer class="border-t border-white/5 py-6 text-center text-[9px] text-white/20"><p>© 2024 CHESSAM ENSAM — LUXURY CHESS CLUB</p></footer>
 </body>
 </html>
